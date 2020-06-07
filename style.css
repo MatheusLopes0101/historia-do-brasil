@@ -1,0 +1,45 @@
+* {
+    font-family: "Comic Sans MS", sans-serif;
+    color: white;
+}
+
+body {
+    background: pink;
+}
+
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content p {
+    margin: 0 20%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul a:hover:after {
+    width: 100%;
+}
+
+nav ul a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    min-height: 2px;
+    width: 0px;
+    background: white;
+    transition: all .15s;
+}
